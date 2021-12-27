@@ -1,7 +1,9 @@
 const expres = require('express');
 const { randomBytes } = require('crypto');
+const cors = require('cors');
 
 const app = expres();
+app.use(cors());
 app.use(expres.json());
 
 const commentsByPostId = {};
