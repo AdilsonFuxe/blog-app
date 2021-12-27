@@ -1,9 +1,10 @@
-function App() {
+import { PostCreate } from './components';
+
+export default function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div className="container">
+      <h1>Create Post</h1>
+      <PostCreate />
     </div>
   );
 }
-
-export default App;
