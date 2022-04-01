@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-srv # name of the service
+spec:
+  type: NodePort # NodePort is a type of service
+  selector:
+    app: posts # This is the label that will be used to select pods
+  ports: 
+    - name: posts # name is optional
+      protocol: TCP # TCP or UDP
+      port: 4000  # port 4000 is exposed by the container
+      targetPort: 4000  # port 4000 is exposed by the container
