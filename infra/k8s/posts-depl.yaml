@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: posts
-          image: adilsonfuxe/posts:0.0.1
+          image: adilsonfuxe/posts
